@@ -1,6 +1,8 @@
 -- 获取编辑器提供的参数，覆盖部分设置
 -- 警告：该功能可能会被恶意利用，请考虑在正式项目发行版中移除
 
+local enable_experimental_functions = true
+
 ---@param name string
 ---@param str string
 ---@param env table
@@ -58,6 +60,9 @@ end
 lstg.FileManager.AddSearchPath("packages/luasocket/")
 lstg.FileManager.AddSearchPath("packages/thlib-scripts/")
 lstg.FileManager.AddSearchPath("packages/thlib-resources/")
+if enable_experimental_functions then
+	lstg.FileManager.AddSearchPath("packages/thlib-experiment/")
+end
 
 -- 将 lstg 库的方法导入到全局（很神秘的设计）
 
