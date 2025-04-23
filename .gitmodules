@@ -16,3 +16,6 @@
 [submodule "game/packages/community-creations"]
 	path = game/packages/community-creations
 	url = https://github.com/Legacy-LuaSTG-Engine/Community-Creations
+[submodule "game/plugins/vulpine-ui"]
+	path = game/plugins/vulpine-ui
+	url = https://github.com/TonyWu1201/VulpineUI
